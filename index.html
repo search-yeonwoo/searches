@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<script>
+	function search(){
+		var keyWord = document.getElementById('search').value;
+		document.getElementById("goYoutube").href = "https://youtube.com/results?search_query="+keyWord;
+	}
+	function search2(){
+		var keyWord = document.getElementById('search2').value;
+		document.getElementById("goNaver").href = "https://search.naver.com/search.naver?sm=tab_hty.top&where=nexearch&query="+keyWord;
+	}
+	function search3(){
+		var keyWord = document.getElementById('search3').value;
+		document.getElementById("goGoogle").href = "https://www.google.com/search?q="+keyWord;
+	}
+	function search4(){
+		var keyWord = document.getElementById('search4').value;
+		document.getElementById("goRoblox").href = "https://www.roblox.com/discover/?Keyword="+keyWord;
+	}
+</script>
+<head>
+	<title>검색창</title>
+	<style>
+		input {
+		  	width: 500px;
+		  	height: 32px;
+		  	font-size: 15px;
+		  	border: 0;
+		 	border-radius: 15px;
+		 	outline: none;
+		 	padding-left: 10px;
+		 	background-color: #00bfff;
+		  	text-decoration: none;
+		 	border-radius: 15px;
+		 	font-size: 20px;
+		}
+		input:link, input:visited {
+		    background-color: #dda0dd;
+		    color: maroon;
+		    padding: 15px 25px;
+		    text-align: center;
+		    text-decoration: none;
+		    display: inline-block;
+		}
+		a {
+			background-color: black;
+			border-radius: 15px;
+  			color: white;
+  			border: none;
+ 			padding: 10px 25px;
+ 			text-decoration: none;
+ 		}
+ 		a:hover, a:focus { animation-duration: 3s; animation-name: rainbowLink; animation-iteration-count: infinite; }
+		@keyframes rainbowLink {
+	   		0% { color: #ff2a2a; }
+	   		15% { color: #ff7a2a; }
+	   		30% { color: #ffc52a }
+	   		45% { color: #43ff2a; }
+	   		60% { color: #2a89ff; }
+	   		75% { color: #202082; }
+	   		90% { color: #6b2aff; }
+	   		100% { color: #e82aff; }
+		  }
+	</style>
+</head>
+<body>
+<img src="youtube.png" width="15%" id="p2"/><br><input type="text" id="search" onkeyup="search()"/><a id = "goYoutube" href="">검색</a><br>
+<img src="naver.jpg" width="15%" id="p2"/><br><input type="text" id="search2" onkeyup="search2()"/><a id = "goNaver" href="">검색</a><br>
+<img src="google.png" width="15%" id="p2"/><br><input type="text" id="search3" onkeyup="search3()"/><a id = "goGoogle" href="">검색</a><br>
+<img src="roblox.png" width="15%" id="p2"/><br><input type="text" id="search4" onkeyup="search4()"/><a id = "goRoblox" href="">검색</a>
+
+
+</body>	
+</html>
